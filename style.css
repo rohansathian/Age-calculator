@@ -1,3 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+
+
 .bt1{
     background-color: #D4AF37;
     border-color: green;
