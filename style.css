@@ -1,0 +1,65 @@
+.bt1{
+    background-color: #D4AF37;
+    border-color: green;
+    border: green;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.bt1:hover{
+    transition: 0.3s ease-in;
+    background-color: #947a26;
+ 
+}
+.form-control{
+    letter-spacing: 2px !important;
+    font-size: large !important;
+    font-family:'Times New Roman', Times, serif!important;
+}
+.c{
+    position: relative;
+}
+.cc{
+    position: absolute;
+
+    left: 20%;
+    width: 800px;
+    height: 720px;
+}
+.dt{
+    
+    font-family: fantasy;
+    font-size: 30px;
+    color: #947a26;
+    
+}
+.tl{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+
+    font-size: x-large;
+    color: navy;
+}
+.pl{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
+.dts{
+    margin-top: 30px;
+    letter-spacing: 5px;
+    color: #947a26;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif
+}
+.dd{
+    margin-top: 30px;
+    /* transition: 0.3s ease-out; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:navy;
+    font-size: larger;
+}
+/* .dd:hover{
+    transition: 0.3s ease-in;
+} */

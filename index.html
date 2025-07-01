@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        #c1{
+            display: none;
+        }#c2{
+            display: none;
+        }#c3{
+            display: none;
+        }#c4{
+            display: none;
+        }#c5{
+            display: none;
+        }#c6{
+            display: none;
+        }#c7{
+            display: none;
+        }#c8{
+            display: none;
+        }#c9{
+            display: none;
+        }
+        #advice{
+            display: none;
+        }#advice1{
+            display: none;
+        }
+        #advice2{
+            display: none;
+        }
+        #advice3{
+            display: none;
+        }#null{
+            display: none;
+        }#tt{
+            display: none;
+        }#null1{
+            display: none;
+        }
+    </style>
+  </head>
+ <body style="background-image: url(./A\ smooth\ color\ gradient\ background\ transitioning\ from\ warm\ golden\ amber\ on\ the\ left\ to\ cool\ blue\ on\ the\ right.\ The\ gradient\ should\ match\ the\ color\ palette\ of\ the\ time\ concept\ image\,\ with\ rich\ golden\ yellows\ blendin.png); background-repeat: no-repeat;background-size:cover">
+    <div class="container">
+        <br>
+        <div class="row mt-3">
+            <div class="col-1">
+            </div>
+            
+            <div class="col-10 p-5" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;margin-top:20px;background: #ffffff;">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center mt-4">
+                    
+                    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bolder;letter-spacing: 2px;color: #0A2463;">Still Alive? Let's Check!</h3>
+                    <div class="row mt-4" style="margin-left: 5px;">
+                        
+                            <div style="display: flex;column-gap: 5px;">
+                                <input type="date" id="date1" class="form-control">
+                                <button class="bt1" onclick="calc()">Calculate</button>
+                            </div>
+                        
+                        <div ><video src="./Animate the man actually grasping and holding the hourglass, struggling with its weight as sand flows through it. His expression shows determination and concern. The clocks around him spin and float as if he's tryi.mp4" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;" id="ic"></video>
+                          
+                        <video src="./1.mp4" id="c1" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./2.mp4" id="c2" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./3.mp4" id="c3" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./4.mp4" id="c4" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./5.mp4" id="c5" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./6.mp4" id="c6" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./7.mp4" id="c7" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./8.mp4" id="c8" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+                        <video src="./9.mp4" id="c9" width="100%" loop autoplay style="border-radius: 5px; margin-top: 30px;"></video>
+
+                            <br><br>
+                        </div>
+                            
+                        
+                    </div>
+                    
+                    
+                </div>
+                    </div>
+
+                    <div class="col-6 p-4" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;border-radius: 10px;" >
+                        <div class="text-center mb-4">
+                        <p id="li" style="font-family: Georgia, 'Times New Roman', Times, serif;color: #0A2463;letter-spacing: 1px;font-size: larger;text-align: justify,center;">Ever wondered exactly how old you are — down to the day? <br><br> This age calculator not only tells you that, but also gives smart, age-based tips to live better, grow stronger, and be wiser.</p>
+                        <h1 id="date" class="dts">
+                            <script>
+                                const today= new Date();
+                                const dd = String(today.getDate()).padStart(2, '0');
+                                const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+                                const yyyy = today.getFullYear();
+                                const formattedDate = `${mm}/${dd}/${yyyy}`;
+                               document.getElementById('date').innerHTML=formattedDate;  
+                            </script>
+                        </h1>
+                        <h4 id="tt" class="tl">"Wow...You've Survived For</h4>
+                            <p id="null" class="dd">"You are not Born yet!.."</p>
+                            <p id="null1" class="dd"><strong>Enter Your Age!..</strong><br><small>We will tell you more than a number</small></p>
+
+                        </div> 
+
+                        <div style="display: flex;justify-content: center;column-gap: 100px;">
+                            <div class="text-center">
+                                <P id="year" class="dt">
+                                    <div class="card"></div>
+                                </P>
+                            </div> 
+                            <div class="text-center">   
+                                <P id="month" class="dt">
+                                    <div class="card"></div>
+                                </P>
+                            </div>
+                             <div class="text-center">
+                                <P id="days" class="dt">
+                                    <div class="card"></div>
+                                </P>
+
+                            </div>
+                        </div>
+                        <p id="advice" class="pl">
+                            <script >
+                                document.getElementById('advice').innerHTML = `
+  <strong>Focus:</strong> Build curiosity and good habits.<br>
+  <strong>Food:</strong>Milk, eggs, fruits, leafy greens, nuts (brain boosters), and plenty of water.<br>
+  <strong>Learn:</strong>Basics of communication, discipline, reading, and creativity. Develop hobbies.<br>
+  <strong>Improve:</strong>Practice empathy, respect elders, play group games to build teamwork.
+`;
+                            </script>
+                        </p><p id="advice1" class="pl">
+                            <script >
+                                document.getElementById('advice1').innerHTML = `
+  <strong>Focus:</strong> Focus on career, body, and mind—this is your prime for building future.<br>
+  <strong>Food:</strong>High-protein meals (chicken, lentils, tofu), omega-3s (fish, walnuts), low sugar.<br>
+  <strong>Learn:</strong> Soft skills, leadership, financial literacy, tech or domain expertise.<br>
+  <strong>Improve:</strong>Read self-help books, build a routine, socialize with smarter people, and avoid toxic influences.
+`;
+                            </script>
+                        </p>
+                        <p id="advice2" class="pl">
+                            <script >
+                                document.getElementById('advice2').innerHTML = `
+  <strong>Focus:</strong>Maintain physical strength, emotional balance, and upgrade skills.<br>
+  <strong>Food:</strong>Fiber-rich foods, lean meats, green veggies, and antioxidants. Avoid processed food.<br>
+  <strong>Learn:</strong> Time management, emotional intelligence, parenting or mentoring, industry updates.<br>
+  <strong>Improve:</strong> Meditate, exercise regularly, journal weekly, build family bonds.
+`;
+                            </script>
+                        </p>
+                        <p id="advice3" class="pl">
+                            <script >
+                                document.getElementById('advice3').innerHTML = `
+  <strong>Focus:</strong> Focus on health, peace of mind, and sharing knowledge.<br>
+  <strong>Food:</strong>Calcium-rich food (dairy, seeds), heart-healthy fats (olive oil, nuts), stay hydrated.<br>
+  <strong>Learn:</strong> Light reading, hobbies (gardening, painting), new languages to keep mind sharp.<br>
+  <strong>Improve:</strong> Stay socially active, volunteer, reduce screen time, practice gratitude.
+`;
+                            </script>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-3">
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <script>
+        function calc(event){
+            let a=document.getElementById('date1').value;
+            
+
+            console.log(a);
+            let parts = a.split('-');
+            let b= parseInt(parts[0]);
+            let mo= parseInt(parts[1]);
+            let dt= parseInt(parts[2]);
+            console.log(b);
+            console.log(mo);
+            console.log(dt);
+
+            let c = new Date().getFullYear();
+            let m = new Date().getMonth()+1;
+            let l = new Date().getDate();
+            console.log(c);
+            console.log(m);
+            console.log(l);
+            if(b>c ||a===""){
+                document.getElementById('li').style.display="block";
+                document.getElementById('null').style.display="block";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('ic').style.display="block";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('advice3').style.display="none";
+
+                document.getElementById('tt').style.display="none";
+                document.getElementById('year').style.display="none";
+                document.getElementById('month').style.display="none";
+                document.getElementById('days').style.display="none";
+
+                if(a==""){
+                    document.getElementById('li').style.display="block";
+                    document.getElementById('null1').style.display="block";
+                    document.getElementById('null').style.display="none";
+
+                }else{
+
+                }
+
+
+                
+            }else{
+                 document.getElementById('year').style.display = "block";
+                 document.getElementById('month').style.display = "block";
+                 document.getElementById('days').style.display = "block";
+
+                let d= c-b;
+            let mt=mo-m;
+            
+            let kl=null;
+
+            if(m>=mo){    
+               kl=d;
+                  
+            }else{
+                kl=d-1;
+                
+            }
+            //month
+            if(mo>m){
+                mt=12-mt;
+            }else{
+                mt= m-mo;
+            }
+            let k=Math.abs(mt);
+            let dc=Math.abs(l-dt);
+            let mz=null;
+            let dz= new Date(c,m,0).getDate();
+            if(dt>l && mo==m){
+                mz=Math.abs(k-1);
+                k=12-mz
+                kl-=1;
+                
+                dz=dz-dc;
+                dc=dz;
+                
+                
+            }else if(dt>l){
+                k=k-1;
+                dz=dz-dc;
+                dc=dz;
+            }
+                 
+            console.log(kl);//year
+            
+            console.log(k)//Month;
+            
+            console.log(dc)//Day;
+            
+
+
+            if(kl<=4){
+                document.getElementById('c1').style.display="block";
+                document.getElementById('advice').style.display="block";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('advice3').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('li').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+            }else if(kl<=6 && kl>4){
+                document.getElementById('c2').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="block";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="none";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+            }else if(kl<=12 && kl>6){
+                document.getElementById('c3').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="block";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="none";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+            }else if(kl<=17 && kl>12){
+                document.getElementById('c4').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="block";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="none";
+                
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+                
+            }else if(kl<=25 && kl>17){
+                document.getElementById('c5').style.display="block";
+                document.getElementById('advice1').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="none";
+                
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+            }else if(kl<=35 && kl>25){
+                document.getElementById('c6').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="block";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="none";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+            }else if(kl<=50 && kl>35){
+                document.getElementById('c7').style.display="block";
+                document.getElementById('advice2').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="none";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+            }else if(kl<=65 && kl>50){
+                document.getElementById('c8').style.display="block";
+                document.getElementById('advice3').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c9').style.display="none";
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice2').style.display="none";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+            }else if(kl>65){
+                document.getElementById('c9').style.display="block";
+                document.getElementById('li').style.display="none";
+                document.getElementById('ic').style.display="none";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('null1').style.display="none";
+                document.getElementById('null').style.display="none";
+                document.getElementById('advice3').style.display="block";
+
+                document.getElementById('tt').style.display="block"
+                document.getElementById('year').innerHTML=kl +('<br>Years');
+                document.getElementById('month').innerHTML=k +('<br>Months');
+                document.getElementById('days').innerHTML=dc +('<br>Days');
+
+
+
+            }else{
+                document.getElementById('ic').style.display="block";
+                document.getElementById('c1').style.display="none";
+                document.getElementById('c2').style.display="none";
+                document.getElementById('c3').style.display="none";
+                document.getElementById('c4').style.display="none";
+                document.getElementById('c5').style.display="none";
+                document.getElementById('c6').style.display="none";
+                document.getElementById('c7').style.display="none";
+                document.getElementById('c8').style.display="none";
+                document.getElementById('advice').style.display="none";
+                document.getElementById('advice1').style.display="none";
+                document.getElementById('advice2').style.display="none";
+                document.getElementById('advice3').style.display="none";
+                document.getElementById('null').style.display="none";
+                // document.getElementById('null1').style.display="block";
+                document.getElementById('null1').style.display="block";
+
+
+                // document.getElementById('tt').style.display="block"
+                // document.getElementById('year').innerHTML=kl +('<br>Years');
+                // document.getElementById('month').innerHTML=k +('<br>Months');
+                // document.getElementById('days').innerHTML=dc +('<br>Days');
+            }
+            
+           
+           
+
+            }
+
+
+            
+            
+
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
